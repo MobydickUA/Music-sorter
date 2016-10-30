@@ -16,8 +16,8 @@ for artist in artists:
 
 	if os.path.isdir(destPath):
 		for song in songs:
-			songName = song.split(" - ")[1])
-			os.rename(song, os.path.join(destPath, songName)
+			songName = song.split(" - ")[1]
+			os.rename(song, os.path.join(destPath, songName))
 			print("Moved: " + artist + " - " + songName)
 	else:
 		if len(songs) >= 3:
@@ -25,6 +25,6 @@ for artist in artists:
 				os.makedirs(destPath)
 				print("Created folder: " + artist)
 			for song in songs:
-				songName = song.split(" - ")[1])
+				songName = song.split(" - ")[1]
 				os.rename(song, os.path.join(destPath, songName))
 				print("-Moved: " + artist + " - " + songName)
